@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" />
+    <link href="fontawesome3/css/all.min.css" rel="stylesheet" />
+    <link href="css7/templatemo-comparto.css" rel="stylesheet" />
+    <title>Dibaca Sambil Maem:p</title>
+	<link rel="icon" type="image/png" href="ice/iceee.png"/>
+<!--
+
+Comparto TemplateMo
+
+https://templatemo.com/tm-544-comparto
+
+-->
+</head>
+
+<body>
+    <!-- Back to top button -->
+    <a id="button"><i class="fas fa-angle-up fa-2x"></i></a>
+    <div class="container-fluid">
+        <section class="tm-mb-1" id="about">
+            <div class="tm-row tm-about-row">
+                <div class="tm-section-1-l">
+                    <img src="img3/friska2.jpg" alt="About image" class="tm-img-responsive">
+                </div>
+                <article class="tm-section-1-r tm-bg-color-8">
+                    <h2 class="tm-mb-2 tm-title-color">Hallo Wanita Tangguh</h2>
+                    <p><a rel="nofollow">aku harap kamu baik-baik saja ya disana,:) kamu jangan berlarut-larut lagi dalam kepedihan ya, melihat air mata yang keluar pada waktu itu seakan benar-benar aku tau bahwa itu memang lah teramat sakit atau mungkin itu memanglah paling sakit di hidup kamu terlebih di satu sisi kamu harus bertarung dengan penyakit di dalam tubuh kamu itu.</a></p>
+                    <p>Aku tau itu hal yang teramat berat dalam hidup kamu, mungkin sudah satu tahun itu berlalu ya begitulah yang aku dengar dari tutur katamu, betapa banyak proses dan halangan yang telah kau lewati untuk masih bisa tetap berdiri sampai di titik ini bahkan hari-harimu masih berlalu seperti biasa, kamu masih berjalan di atas bumi. Kamu masih tertawa ketika sahabatmu membuat lelucon. Kamu masih menyukai es krim dan coklat favoritmu.</p>
+                    <p></p
+                </article>
+            </div>
+        </section>
+        <div class="tm-bg-color-1 tm-mb-1 tm-row tm-social-row">
+        </div>
+        <section class="tm-mb-1 tm-row tm-services-row" id="services">
+            <div class="tm-section-2-l">
+                <article class="tm-bg-color-6 tm-box-pad tm-mb-1">
+                    <h2 class="tm-mb-2"></h2>
+                    <p>Kamu benar-benar bangkit, kata mereka walaupun terkadang di satu sisi kamu masih teringat jelas rasa sakit itu. Terakhir namun bukan akhir, kamu layak sekali untuk berbahagia. Meski hatimu menuntut sebuah pengisian, kamu tak perlu terburu-buru lagi. Kamu memikirkan semua dengan begitu matang. Bagimu, bahagia tak sepatutnya memaksa. Tertawalah dalam balutan do’a, meski hatimu pernah tercabik. Kamu layak untuk bahagia bahkan jauh lebih bahagia dari sebelumnya.</p>
+                    <p class="tm-mb-0">Terimakasih ya sudah memberi ian kesempatan untuk berkenalan denganmu dan memberikan banyak sekali pelajaran yang ian bisa ambil dari hidup kamu yang sebelumnya belum pernah ian paham menjadi paham, darimu aku banyak belajar menjadi sosok manusia yang kuat.</p>
+                </article>
+                <div class="tm-bg-color-7 tm-em-box">
+                    <p class="tm-text-color-2">maybe time didn't heal wounds exactly, but it gave you a kind of armor, or a new perspective a way to remember with a smile.</p>
+					<h1 class="tm-text-color-2">TERIMAKASIH WANITA HEBAT DAN KUAT</h1>
+                </div>
+            </div>
+            <div class="tm-section-2-r">
+                <img src="img3/friska1.jpg" alt="Services image" class="tm-img-responsive">
+            </div>
+        </section>
+        <section class="tm-bg-color-4 tm-mb-3 tm-gallery-section" id="gallery">
+            <div class="tm-gallery-header">
+            </div>
+           
+    <script>
+
+        // Scroll to Top button
+        var btn = $('#button');
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 300) {
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
+        });
+
+        btn.on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({ scrollTop: 0 }, '300');
+        });
+
+        // DOM is ready
+        $(function () {
+            // Single Page Nav
+            $('#tm-nav').singlePageNav({ speed: 600 });
+
+            // Smooth Scroll (https://css-tricks.com/snippets/jquery/smooth-scrolling/)
+            $('a[href*="#"]')
+                // Remove links that don't actually link to anything
+                .not('[href="#"]')
+                .not('[href="#0"]')
+                .click(function (event) {
+                    // On-page links
+                    if (
+                        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+                        &&
+                        location.hostname == this.hostname
+                    ) {
+                        // Figure out element to scroll to
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                        // Does a scroll target exist?
+                        if (target.length) {
+                            // Only prevent default if animation is actually gonna happen
+                            event.preventDefault();
+                            $('html, body').animate({
+                                scrollTop: target.offset().top
+                            }, 600, function () {
+                                // Callback after animation
+                                // Must change focus!
+                                var $target = $(target);
+                                $target.focus();
+                                if ($target.is(":focus")) { // Checking if the target was focused
+                                    return false;
+                                } else {
+                                    $target.attr('tabindexs', '-1'); // Adding tabindex for elements not focusable
+                                    $target.focus(); // Set focus again
+                                };
+                            });
+                        }
+                    }
+                });
+
+            /* Isotope Gallery */
+
+            // init isotope
+            var $gallery = $(".tm-gallery").isotope({
+                itemSelector: ".tm-gallery-item",
+                layoutMode: "fitRows"
+            });
+            // layout Isotope after each image loads
+            $gallery.imagesLoaded().progress(function () {
+                $gallery.isotope("layout");
+            });
+
+            $(".filters-button-group").on("click", "a", function () {
+                var filterValue = $(this).attr("data-filter");
+                $gallery.isotope({ filter: filterValue });
+            });
+
+            $(".tabgroup > div").hide();
+            $(".tabgroup > div:first-of-type").show();
+            $(".tabs a").click(function (e) {
+                e.preventDefault();
+                var $this = $(this),
+                    tabgroup = "#" + $this.parents(".tabs").data("tabgroup"),
+                    others = $this
+                        .closest("li")
+                        .siblings()
+                        .children("a"),
+                    target = $this.attr("href");
+                others.removeClass("active");
+                $this.addClass("active");
+            });
+        });
+    </script>
+</body>
+</html>
